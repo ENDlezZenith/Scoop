@@ -21,7 +21,7 @@
     ],
     "checkver": {
         "url": "https://chatboxai.app/help-center/changelog",
-        "regex": ">v([\\d\\.]+)"
+        "regex": ">v([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://download.chatboxai.app/releases/Chatbox-$version-Setup.exe"
