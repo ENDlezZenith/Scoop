@@ -69,7 +69,7 @@
     ],
     "checkver": {
         "url": "https://en.wikipedia.org/wiki/History_of_iTunes",
-        "regex": "background:#3d4;\">([\\d\\.]+)"
+        "regex": "background:#3d4;\">([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://www.apple.com/itunes/download/win64#/dl.7z"
