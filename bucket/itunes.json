@@ -2,16 +2,9 @@
     "version": "12.13.7.1",
     "description": "You can join Apple Music and stream — or download and play offline — millions of songs, ad‑free.",
     "homepage": "https://www.apple.com/itunes/",
-    "license": {
-        "identifier": "Proprietary",
-        "url": "https://www.apple.com/legal/sla/"
-    },
-    "architecture": {
-        "64bit": {
-            "url": "https://www.apple.com/itunes/download/win64#/dl.7z",
-            "hash": "2f5a7f4a85e24810297cb3ef63fd6d743df1c62edfc5e4ca3677c7b083bc2ff0"
-        }
-    },
+    "license": "Proprietary",
+    "url": "https://www.apple.com/itunes/download/win64#/dl.7z",
+    "hash": "2f5a7f4a85e24810297cb3ef63fd6d743df1c62edfc5e4ca3677c7b083bc2ff0",
     "pre_install": [
         "if (-not $global) {",
         "   throw 'This package must be installed globally.'",
@@ -79,10 +72,6 @@
         "regex": "background:#3d4;\">([\\d\\.]+)"
     },
     "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://www.apple.com/itunes/download/win64#/dl.7z"
-            }
-        }
+        "url": "https://www.apple.com/itunes/download/win64#/dl.7z"
     }
 }
