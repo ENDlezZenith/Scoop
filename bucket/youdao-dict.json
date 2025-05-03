@@ -1,14 +1,12 @@
 {
-    "version": "1.",
+    "version": "11.0.0.0",
     "description": "See the world with you.",
-    "homepage": "https://fanyi.youdao.com/download-Windows",
+    "homepage": "https://cidian.youdao.com",
     "license": "Proprietary",
     "url": "http://cidian.youdao.com/download/YoudaoDict.exe#/dl.7z",
-    "hash": "2dabd657980122fc68528bb35154419126f358056e10ed0e31709a692b95ee6f",
-    "pre_install": [
-        "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\dict.7z\" \"$dir\"",
-        "Remove-Item -Recurse -Force \"$dir\\`$PLUGINSDIR\""
-    ],
+    "hash": "84af047388021222fc34f488145f0cb19006d64202666d64807a5bc91cb346bc",
+    "pre_install": "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\dict.7z\" \"$dir\"",
+    "post_install": "@('$PLUGINSDIR', '[NSIS].nsi', 'uninst.exe', '$_67_') | ForEach-Object { Remove-Item \"$dir\\$_\" -ErrorAction 'SilentlyContinue' -Force -Recurse }",
     "bin": "YoudaoDict.exe",
     "shortcuts": [
         [
@@ -17,8 +15,9 @@
         ]
     ],
     "checkver": {
-        "url": "https://fanyi.youdao.com/download-release-notes/",
-        "regex": "\\>v([\\d\\.]+)"
+        "url": "https://api-overmind.youdao.com/openapi/get/luna/dict/luna-front/prod/cidianConfig",
+        "jsonpath": "$.data.value.logList[0].version",
+        "regex": "([\\d.]+)"
     },
     "autoupdate": {
         "url": "http://cidian.youdao.com/download/YoudaoDict.exe#/dl.7z"
