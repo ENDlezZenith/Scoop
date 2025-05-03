@@ -1,25 +1,20 @@
 {
-    "version": "3.29.3.498",
+    "version": "3.28.21.410",
     "description": "Start a video meeting on the go.",
-    "homepage": "https://meeting.tencent.com/",
-    "license": {
-        "identifier": "Proprietary",
-        "url": "https://meeting.tencent.com/declare.html"
+    "homepage": "https://meeting.tencent.com/index.html",
+    "license": "Proprietary",
+    "url": "https://updatecdn.meeting.qq.com/cos/f0c5d8f134cb68ccfdf5c5637366f5a7/TencentMeeting_0300000000_3.28.21.410.publish.officialwebsite.exe#/dl.7z",
+    "hash": "md5:f0c5d8f134cb68ccfdf5c5637366f5a7",
+    "installer": {
+        "script": [
+            "Get-Item \"$dir\\`$_*_\" | Rename-Item -NewName \"$version\"",
+            "Move-Item \"$dir\\wemeetapp_new.exe\" \"$dir\\WeMeet.exe\"",
+            "Remove-Item -R -Path \"$dir\\`$WINDIR\",\"$dir\\`$PLUGINSDIR\",\"$dir\\`$TEMP\",\"$dir\\wemeetapp.exe\""
+        ]
     },
-    "architecture": {
-        "64bit": {
-            "url": "https://updatecdn.meeting.qq.com/cos/edd70f2454becab8cd8cacb27c82a43e/TencentMeeting_0300000000_3.29.3.498_x86_64.publish.exe#/dl.7z",
-            "hash": "4a9635d40cc922f9ff10d97c44b98eac356de0f806bc304cb58fd8cb1ccf943f"
-        },
-    },
-    "post_install": [
-        "Rename-Item \"$dir\\`$_*_\" \"$dir\\$version\"",
-        "Remove-Item \"$dir\\$*\" -Recurse -Force -ErrorAction SilentlyContinue",
-        "Remove-Item \"$dir\\WeMeetApp_new.exe\", \"$dir\\$version\\WeMeetUninstall.exe\" -Force -ErrorAction SilentlyContinue"
-    ],
     "shortcuts": [
         [
-            "WeMeetApp.exe",
+            "WeMeet.exe",
             "Tencent Meeting"
         ]
     ],
@@ -28,10 +23,6 @@
         "regex": "\"md5\":\"(?<hash>[a-f0-9]+)\".+\"version\":\"([\\d\\.]+)\""
     },
     "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://updatecdn.meeting.qq.com/cos/$matchHash/TencentMeeting_0300000000_$version_x86_64.publish.officialwebsite.exe#/dl.7z",
-            },
-        }
+        "url": "https://updatecdn.meeting.qq.com/cos/$matchHash/TencentMeeting_0300000000_$version.publish.officialwebsite.exe#/dl.7z",
     }
 }
