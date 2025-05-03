@@ -11,10 +11,6 @@
             "url": "https://d1.music.126.net/dmusic/NeteaseCloudMusic_Music_official_3.0.3.203079_64.exe#/dl.7z",
             "hash": "e630d03cdc66f489769782f5598efff034c07976a732617b569648320cceaf66"
         },
-        "32bit": {
-            "url": "https://d1.music.126.net/dmusic/NeteaseCloudMusic_Music_official_3.0.3.203079_32.exe#/dl.7z",
-            "hash": "6acf8a937319c827e730874018d8376dde95cf1bfd689a8c9f1531c166e65501"
-        }
     },
     "installer": {
         "script": [
@@ -48,9 +44,6 @@
             "64bit": {
                 "url": "https://d1.music.126.net/dmusic/NeteaseCloudMusic_Music_official_$version_64.exe#/dl.7z"
             },
-            "32bit": {
-                "url": "https://d1.music.126.net/dmusic/NeteaseCloudMusic_Music_official_$version_32.exe#/dl.7z"
-            }
         }
     }
 }
