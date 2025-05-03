@@ -1,10 +1,10 @@
 {
-    "version": "3.28.21.410",
+    "version": "3.33.3.413",
     "description": "Start a video meeting on the go.",
     "homepage": "https://meeting.tencent.com/index.html",
     "license": "Proprietary",
-    "url": "https://updatecdn.meeting.qq.com/cos/f0c5d8f134cb68ccfdf5c5637366f5a7/TencentMeeting_0300000000_3.28.21.410.publish.officialwebsite.exe#/dl.7z",
-    "hash": "md5:f0c5d8f134cb68ccfdf5c5637366f5a7",
+    "url": "https://updatecdn.meeting.qq.com/cos/4b039cdede7fa2192cdd7d0a85b67fd8/TencentMeeting_0300000000_3.33.3.413.publish.officialwebsite.exe#/dl.7z",
+    "hash": "bfa692b7d0f7d057177e1f2a76aee453dcde28a300154687cb0fe5eb2b9f0385",
     "installer": {
         "script": [
             "Get-Item \"$dir\\`$_*_\" | Rename-Item -NewName \"$version\"",
@@ -23,6 +23,6 @@
         "regex": "\"md5\":\"(?<hash>[a-f0-9]+)\".+\"version\":\"([\\d\\.]+)\""
     },
     "autoupdate": {
-        "url": "https://updatecdn.meeting.qq.com/cos/$matchHash/TencentMeeting_0300000000_$version.publish.officialwebsite.exe#/dl.7z",
+        "url": "https://updatecdn.meeting.qq.com/cos/$matchHash/TencentMeeting_0300000000_$version.publish.officialwebsite.exe#/dl.7z"
     }
 }
