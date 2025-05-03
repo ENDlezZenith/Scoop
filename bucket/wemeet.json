@@ -12,7 +12,6 @@
         "create_startmenu_shortcuts $manifest $original_dir $global $architecture",
         "$manifest.shortcuts = @()"
     ],
-    "bin": "wemeetapp.exe",
     "shortcuts": [
         [
             "wemeetapp.exe",
