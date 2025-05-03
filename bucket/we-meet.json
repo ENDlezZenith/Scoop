@@ -1,0 +1,47 @@
+{
+    "$schema": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
+    "version": "3.29.3.498",
+    "description": "Start a video meeting on the go.",
+    "homepage": "https://meeting.tencent.com/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://meeting.tencent.com/declare.html"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://updatecdn.meeting.qq.com/cos/edd70f2454becab8cd8cacb27c82a43e/TencentMeeting_0300000000_3.29.3.498_x86_64.publish.exe#/dl.7z",
+            "hash": "4a9635d40cc922f9ff10d97c44b98eac356de0f806bc304cb58fd8cb1ccf943f"
+        },
+        "32bit": {
+            "url": "https://updatecdn.meeting.qq.com/cos/914346a7f4ec2e31d5d3defd04905e75/TencentMeeting_0300000000_3.29.3.498.publish.exe#/dl.7z",
+            "hash": "f626b9afa23d31443744e1515ba3aa4c472717c6df4f0004c49b4593349c0a64"
+        }
+    },
+    "post_install": [
+        "Rename-Item \"$dir\\`$_*_\" \"$dir\\$version\"",
+        "Remove-Item \"$dir\\$*\" -Recurse -Force -ErrorAction SilentlyContinue",
+        "Remove-Item \"$dir\\WeMeetApp_new.exe\", \"$dir\\$version\\WeMeetUninstall.exe\" -Force -ErrorAction SilentlyContinue"
+    ],
+    "shortcuts": [
+        [
+            "WeMeetApp.exe",
+            "Tencent Meeting"
+        ]
+    ],
+    "checkver": {
+        "url": "https://meeting.tencent.com/web-service/query-download-info?q=%5B%0A%09%7B%0A%09%09%22package-type%22%3A%20%22app%22,%0A%09%09%22channel%22%3A%20%220300000000%22,%0A%09%09%22platform%22%3A%20%22windows%22%0A%09%7D%0A%5D&nonce=iYw8ncQFDF8DAjHn",
+        "regex": "\"md5\":\"(?<hash>[a-f0-9]+)\".+\"version\":\"([\\d\\.]+)\""
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://updatecdn.meeting.qq.com/cos/$matchHash/TencentMeeting_0300000000_$version_x86_64.publish.officialwebsite.exe#/dl.7z",
+                }
+            },
+            "32bit": {
+                "url": "https://updatecdn.meeting.qq.com/cos/$matchHash/TencentMeeting_0300000000_$version.publish.officialwebsite.exe#/dl.7z",
+                }
+            }
+        }
+    }
+}
