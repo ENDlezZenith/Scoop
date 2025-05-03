@@ -28,6 +28,10 @@
         "regex": ">v(\\d+.+)<\/span>"
     },
     "autoupdate": {
-        "url": "http://cidian.youdao.com/download/YoudaoDict.exe#/dl.7z",
+        "architecture": {
+            "64bit": {
+                "url": "http://cidian.youdao.com/download/YoudaoDict.exe#/dl.7z",
+            }
+        }
     }
 }
