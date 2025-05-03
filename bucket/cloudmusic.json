@@ -31,7 +31,7 @@
     "checkver": {
         "url": "https://music.163.com/api/appcustomconfig/get",
         "jsonpath": "$.data.web-new-download.pc64.downloadUrl",
-        "regex": "NeteaseCloudMusic_Music_official_([\\d.]+)_64.exe"
+        "regex": "NeteaseCloudMusic_Music_official_([\\d\\.]+)_64.exe"
     },
     "autoupdate": {
         "url": "https://d1.music.126.net/dmusic/NeteaseCloudMusic_Music_official_$version_64.exe#/dl.7z"
