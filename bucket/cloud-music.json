@@ -32,6 +32,7 @@
             "Remove-Module -Name DoradoUtils"
         ]
     },
+    "bin": "cloudmusic.exe",
     "shortcuts": [
         [
             "cloudmusic.exe",
