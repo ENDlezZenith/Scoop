@@ -1,8 +1,8 @@
 {
     "version": "12.13.7.1",
     "description": "Apple iTunes.",
-    "license": "Proprietary",
     "homepage": "https://www.apple.com/itunes/",
+    "license": "Proprietary",
     "url": "https://www.apple.com/itunes/download/win64#/dl.7z",
     "hash": "2f5a7f4a85e24810297cb3ef63fd6d743df1c62edfc5e4ca3677c7b083bc2ff0",
     "pre_install": [
