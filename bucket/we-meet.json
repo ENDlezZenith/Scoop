@@ -36,11 +36,9 @@
         "architecture": {
             "64bit": {
                 "url": "https://updatecdn.meeting.qq.com/cos/$matchHash/TencentMeeting_0300000000_$version_x86_64.publish.officialwebsite.exe#/dl.7z",
-                }
             },
             "32bit": {
                 "url": "https://updatecdn.meeting.qq.com/cos/$matchHash/TencentMeeting_0300000000_$version.publish.officialwebsite.exe#/dl.7z",
-                }
             }
         }
     }
