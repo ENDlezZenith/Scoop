@@ -11,10 +11,6 @@
             "url": "https://updatecdn.meeting.qq.com/cos/edd70f2454becab8cd8cacb27c82a43e/TencentMeeting_0300000000_3.29.3.498_x86_64.publish.exe#/dl.7z",
             "hash": "4a9635d40cc922f9ff10d97c44b98eac356de0f806bc304cb58fd8cb1ccf943f"
         },
-        "32bit": {
-            "url": "https://updatecdn.meeting.qq.com/cos/914346a7f4ec2e31d5d3defd04905e75/TencentMeeting_0300000000_3.29.3.498.publish.exe#/dl.7z",
-            "hash": "f626b9afa23d31443744e1515ba3aa4c472717c6df4f0004c49b4593349c0a64"
-        }
     },
     "post_install": [
         "Rename-Item \"$dir\\`$_*_\" \"$dir\\$version\"",
@@ -36,9 +32,6 @@
             "64bit": {
                 "url": "https://updatecdn.meeting.qq.com/cos/$matchHash/TencentMeeting_0300000000_$version_x86_64.publish.officialwebsite.exe#/dl.7z",
             },
-            "32bit": {
-                "url": "https://updatecdn.meeting.qq.com/cos/$matchHash/TencentMeeting_0300000000_$version.publish.officialwebsite.exe#/dl.7z",
-            }
         }
     }
 }
