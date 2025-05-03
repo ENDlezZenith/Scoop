@@ -37,6 +37,12 @@
         "Remove-Item -Recurse \"$([Environment]::GetFolderPath('CommonStartMenu'))\\Programs\\iTunes\"",
         "Remove-Item -Recurse \"$([Environment]::GetFolderPath('CommonDesktopDirectory'))\\iTunes.lnk\""
     ],
+    "shortcuts": [
+        [
+            "iTunes.exe",
+            "iTunes"
+        ]
+    ],
     "pre_uninstall": [
         "Stop-Service 'Apple Mobile Device Service'",
         "Stop-Service 'Bonjour Service'"
@@ -61,12 +67,6 @@
             "}"
         ]
     },
-    "shortcuts": [
-        [
-            "iTunes.exe",
-            "iTunes"
-        ]
-    ],
     "checkver": {
         "url": "https://en.wikipedia.org/wiki/History_of_iTunes",
         "regex": "background:#3d4;\">([\\d.]+)"
