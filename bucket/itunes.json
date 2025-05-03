@@ -4,7 +4,7 @@
     "homepage": "https://www.apple.com/itunes/",
     "license": {
         "identifier": "Proprietary",
-        "url": "https://www.apple.com/legal/sla/docs/iTunesWindows.pdf"
+        "url": "https://www.apple.com/legal/sla/"
     "architecture": {
         "64bit": {
             "url": "https://www.apple.com/itunes/download/win64#/dl.7z",
