@@ -1,6 +1,6 @@
 {
     "version": "1.",
-    "description": "网易有道词典",
+    "description": "See the world with you.",
     "homepage": "https://fanyi.youdao.com/download-Windows",
     "license": "Proprietary",
     "url": "http://cidian.youdao.com/download/YoudaoDict.exe#/dl.7z",
@@ -18,7 +18,7 @@
     ],
     "checkver": {
         "url": "https://fanyi.youdao.com/download-release-notes/",
-        "regex": ">v([\\d\\.]+)"
+        "regex": "\\>v([\\d\\.]+)"
     },
     "autoupdate": {
         "url": "http://cidian.youdao.com/download/YoudaoDict.exe#/dl.7z"
