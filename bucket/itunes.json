@@ -11,10 +11,6 @@
             "url": "https://www.apple.com/itunes/download/win64#/dl.7z",
             "hash": "08f399888efd2ddb16147c28e893cf60c8c6a997f06e4fae89b14886cb5bdeb4"
         },
-        "32bit": {
-            "url": "https://www.apple.com/itunes/download/win32#/dl.7z",
-            "hash": "de72dbfaeae29b77423795b304cc5b62c26ff79c29f16aeb058d51b5a410aeb4"
-        }
     },
     "pre_install": [
         "if (-not $global) {",
@@ -87,9 +83,6 @@
             "64bit": {
                 "url": "https://www.apple.com/itunes/download/win64#/dl.7z"
             },
-            "32bit": {
-                "url": "https://www.apple.com/itunes/download/win32#/dl.7z"
-            }
         }
     }
 }
