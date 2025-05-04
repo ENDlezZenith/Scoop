@@ -2,7 +2,10 @@
     "version": "7.55.1.101",
     "description": "BaiduNetdisk",
     "homepage": "https://pan.baidu.com/download",
-    "license": "Proprietary",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://pan.baidu.com/disk/main#/protocol/duty_mobi"
+    },
     "url": "http://issuecdn.baidupcs.com/issue/netdisk/yunguanjia/BaiduNetdisk_7.55.1.101.exe#dl.7z",
     "hash": "2eada51be73a103e48268d0b9f7dcd1772b26c9696afea2d2ec5eb7934a7a715",
     "post_install": [
