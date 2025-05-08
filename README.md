@@ -8,5 +8,6 @@ Scoop Bucket for Personal Use.
 - Chatbox
 - CloudMusic
 - iTunes
+- Steam++
 - WeMeet
 - YoudaoDict
