@@ -1,13 +1,13 @@
 {
-    "version": "3.1.9.203872",
+    "version": "3.1.10.203938",
     "description": "CloudMusic",
     "homepage": "https://music.163.com/",
     "license": {
         "identifier": "Freeware",
         "url": "https://st.music.163.com/official-terms/service"
     },
-    "url": "https://d1.music.126.net/dmusic/NeteaseCloudMusic_Music_official_3.1.9.203872_64.exe#/dl.7z",
-    "hash": "34d6a391bbf1bc3ce722265e72cdfedd09ee6ea2e3aaecb5d35c2b155c4b0ccf",
+    "url": "https://d1.music.126.net/dmusic/NeteaseCloudMusic_Music_official_3.1.10.203938_64.exe#/dl.7z",
+    "hash": "e6c65f30324c7d5a8b4630695a3fd5854834ef5875ae8b6cee1898ac3b63b5df",
     "installer": {
         "script": [
             "Get-ChildItem \"$dir\\redist_packages\" | Move-Item -Destination \"$dir\" -Force",
